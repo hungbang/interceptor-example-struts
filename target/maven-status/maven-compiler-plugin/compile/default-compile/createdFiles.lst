@@ -1,0 +1,7 @@
+simple/interceptor/AuthenticationInterceptor2.class
+simple/model/User.class
+simple/interceptor/UserAware.class
+simple/interceptor/AuthenticationInterceptor.class
+simple/example/HelloWorld.class
+simple/example/Login.class
+simple/example/ExampleSupport.class

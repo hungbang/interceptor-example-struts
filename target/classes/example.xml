@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<!-- 
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+    <package name="example" namespace="/example" extends="struts-default">
+		
+		<interceptors>
+			<interceptor name="authen" class="simple.interceptor.AuthenticationInterceptor"></interceptor>
+			<!-- <interceptor name="authen1" class="simple.interceptor.AuthenticationInterceptor2"></interceptor> -->
+			<interceptor-stack name="authenStack">
+				<interceptor-ref name="authen"></interceptor-ref>
+				<!-- <interceptor-ref name="authen1"></interceptor-ref> -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="authenStack"></default-interceptor-ref>
+		
+        <default-action-ref name="HelloWorld" />
+
+        <action name="HelloWorld" class="simple.example.HelloWorld">
+        	<result name="input">/WEB-INF/example/Login.jsp</result>
+            <result>/WEB-INF/example/HelloWorld.jsp</result>
+        </action>
+
+        <action name="Login_*" method="{1}" class="simple.example.Login">
+        	<interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="input">/WEB-INF/example/Login.jsp</result>
+            <result type="redirectAction">Menu</result>
+        </action>
+
+        <action name="*" class="simple.example.ExampleSupport">
+        	<result name="input">/WEB-INF/example/Login.jsp</result>
+            <result>/WEB-INF/example/{1}.jsp</result>
+        </action>
+
+        <!-- Add additional "example" package actions here. -->
+
+    </package>
+</struts>
