@@ -18,6 +18,22 @@
                 <param name="namespace">/example</param>
             </result>
         </action>
+        
+        <action name="helloWorld">
+        	 <result>success.jsp</result>
+        </action>
+        
+        <action name="login">
+        	<result>login.jsp</result>
+        </action>
+        
+        <action name="loginFailed">
+        	<result>login?error=true</result>
+        </action>
+        
+        <action name="welcome">
+        	<result>security/hello.jsp</result>
+        </action>
 
     </package>
 
