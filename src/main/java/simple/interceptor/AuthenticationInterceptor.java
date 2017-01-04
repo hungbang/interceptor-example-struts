@@ -1,5 +1,7 @@
 package simple.interceptor;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import com.opensymphony.xwork2.Action;
@@ -28,7 +30,10 @@ public class AuthenticationInterceptor implements Interceptor {
 	public String intercept(ActionInvocation invocation) throws Exception {
 		System.out.println("====inside authen interceptor====");
 		Map<String, Object> sessionAttributes = invocation.getInvocationContext().getSession();
-
+		
+		List<String> abc = Arrays.asList("hung", "bang", "quan");
+		abc.forEach(value ->System.out.println());
+		
 		User user = (User) sessionAttributes.get("USER");
 		if (user == null) {
 			return Action.INPUT;

@@ -11,7 +11,6 @@
 		
 		<interceptors>
 			<interceptor name="authen" class="simple.interceptor.AuthenticationInterceptor"></interceptor>
-			<!-- <interceptor name="authen1" class="simple.interceptor.AuthenticationInterceptor2"></interceptor> -->
 			<interceptor-stack name="authenStack">
 				<interceptor-ref name="authen"></interceptor-ref>
 				<!-- <interceptor-ref name="authen1"></interceptor-ref> -->
@@ -23,23 +22,45 @@
 		
         <default-action-ref name="HelloWorld" />
 
-        <action name="HelloWorld" class="simple.example.HelloWorld">
+        <action name="HelloWorld" class="simple.base.HelloWorld">
+        	
         	<result name="input">/WEB-INF/example/Login.jsp</result>
             <result>/WEB-INF/example/HelloWorld.jsp</result>
         </action>
 
-        <action name="Login_*" method="{1}" class="simple.example.Login">
+        <action name="Login_*" method="{1}" class="simple.base.Login">
         	<interceptor-ref name="defaultStack"></interceptor-ref>
             <result name="input">/WEB-INF/example/Login.jsp</result>
             <result type="redirectAction">Menu</result>
         </action>
 
-        <action name="*" class="simple.example.ExampleSupport">
+        <action name="*" class="simple.base.BaseSupport">
         	<result name="input">/WEB-INF/example/Login.jsp</result>
             <result>/WEB-INF/example/{1}.jsp</result>
         </action>
 
         <!-- Add additional "example" package actions here. -->
+        
+        <action name="loginPage">
+        	<result>/WEB-INF/example/Login.jsp</result>
+        </action>
+        
+        <action name="welcome">
+        	<result>/WEB-INF/example/HelloWorld.jsp</result>
+        </action>
 
     </package>
+    
+    <package name="product" namespace="/product" extends="struts-default">
+    	<action name="AddNew" class="simple.controller.ProductAction">
+    		<result name="input">/WEB-INF/product/addNewProduct.jsp</result>
+    	</action>
+    	<action name="show" class="simple.controller.ProductAction" method="showProduct">
+    		<result>/WEB-INF/product/product.jsp</result>
+    	</action>
+    	<action name="add">
+    		<result>/WEB-INF/product/addNewProduct.jsp</result>
+    	</action>
+    </package>
+    
 </struts>
