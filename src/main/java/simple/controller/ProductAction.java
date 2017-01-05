@@ -31,11 +31,6 @@ public class ProductAction extends BaseSupport implements ModelDriven<Product>, 
 	}
 	
 	public String showProduct(){
-		List<Product> prods = (List<Product>)sessionAttribute.get("prods");
-		ValueStack stack = ActionContext.getContext().getValueStack();
-		String abc = "hien ra";
-		stack.push(abc);
-		System.out.println("==prods.get(0).getProductName()==="+ prods.get(0).getProductName());
 		return Action.SUCCESS;
 	}
 	
