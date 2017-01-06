@@ -6,25 +6,25 @@
 <validators>
   <field name="productId">
     <field-validator type="requiredstring">
-      <message key="requiredstring"/>
+      <message key="product.requiredstring"/>
     </field-validator>
   </field>
   
   <field name="productName">
     <field-validator type="requiredstring">
-      <message key="requiredstring"/>
+      <message key="product.requiredstring"/>
     </field-validator>
   </field>
   
    <field name="quantity">
     <field-validator type="requiredstring">
-      <message key="requiredstring"/>
+      <message key="product.requiredstring"/>
     </field-validator>
   </field>
   
    <field name="price">
     <field-validator type="requiredstring">
-      <message key="requiredstring"/>
+      <message key="product.requiredstring"/>
     </field-validator>
   </field>
 </validators>        

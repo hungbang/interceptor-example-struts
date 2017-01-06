@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.abc{
+	font-weight: bold;
+	background-color: #ff4a5e; 	
+}
+
+span.errorMessage {
+    color: red;
+    font-size: 15px;
+    font-style: italic;
+}
+body{
+	margin: 0 auto;
+	width: 975px;
+}

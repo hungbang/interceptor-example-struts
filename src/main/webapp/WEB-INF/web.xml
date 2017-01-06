@@ -19,9 +19,16 @@
 	<!-- <listener> <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> 
 		</listener> -->
 
-	<!-- <listener>
-		<listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
-	</listener> -->
+	<!-- <listener> <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class> 
+		</listener> -->
+	<listener>
+		<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>tilesDefinitions</param-name>
+		<param-value>tiles.xml</param-value>
+	</context-param>
 
 	<filter>
 		<filter-name>struts2</filter-name>
