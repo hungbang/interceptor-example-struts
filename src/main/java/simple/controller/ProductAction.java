@@ -24,15 +24,18 @@ public class ProductAction extends BaseSupport implements ModelDriven<Product>, 
 	Map<String, Object> sessionAttribute = null;
 	
 
+	
 	@Override
 	public String execute() throws Exception {
 		addProduct();
+		System.out.println("=====execute execute======");
 		return Action.INPUT;
 	}
 	
-	public String showProduct(){
-		return Action.SUCCESS;
-	}
+//	public String showProduct(){
+//		System.out.println("=====show product======");
+//		return Action.SUCCESS;
+//	}
 	
 	private void addProduct() {
 		if(sessionAttribute.get("prods") == null){
@@ -43,6 +46,8 @@ public class ProductAction extends BaseSupport implements ModelDriven<Product>, 
 			List<Product> prods = (List<Product>)sessionAttribute.get("prods");
 			prods.add(product);
 		}
+		
+		
 	}
 
 	@Override

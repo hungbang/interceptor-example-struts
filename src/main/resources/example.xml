@@ -61,18 +61,32 @@
 		</result-types>
 		
 		<action name="AddNew" class="simple.controller.ProductAction">
-
 			<result name="input" type="tiles">addNew.tiles</result>
-			<!-- <result name="input">/WEB-INF/product/addNewProduct.jsp</result> -->
 		</action>
-		<action name="show" class="simple.controller.ProductAction"
-			method="showProduct">
-			<result type="tiles">product.tiles</result>
+		<action name="ShowAction" class="simple.controller.ProductShow">
+			<result name="success" type="tiles">product.tiles</result>
 			<!-- <result>/WEB-INF/product/product.jsp</result> -->
 		</action>
 		<action name="add">
 			<result>/WEB-INF/product/addNewProduct.jsp</result>
 		</action>
+		
+		<action name="index1">
+			<result>/WEB-INF/color2/index.jsp</result>
+		</action>
+		
+		<action name="product">
+			<result>/WEB-INF/stored/products.jsp</result>
+		</action>
+		
+		<action name="product-single">
+			<result>/WEB-INF/stored/product-single.jsp</result>
+		</action>
+		
+		<action name="product-cart">
+			<result>/WEB-INF/stored/page-cart.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>
