@@ -2,399 +2,552 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head>
-		<title>Stored HTML Template</title>
-		<meta name="Keywords" content=" " />
-		<meta name="Description" content=" " />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<!-- CSS -->
-		<link rel="stylesheet" href="<s:url value="/assets/store/css/style.css" />" type="text/css" media="screen" />
-				<link rel="stylesheet" type="text/css" href="<s:url value="/assets/store/fonts/style-bitter.css" />" media="screen" />
-		<link rel="stylesheet" type="text/css" href="<s:url value="/assets/store/includes/fancybox/jquery.fancybox-1.3.4.css" />" media="screen" />
-		
-		
-		<!-- jQuery We Need -->
-		<script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="<s:url value="/assets/store/includes/js/jquery.easing.1.3.js" />"></script>
-		<script type="text/javascript" src="<s:url value="/assets/store/includes/fancybox/jquery.mousewheel-3.0.4.pack.js" />"></script>
-		<script type="text/javascript" src="<s:url value="/assets/store/includes/fancybox/jquery.fancybox-1.3.4.pack.js" />"></script>
-		<script type="text/javascript" src="<s:url value="/assets/store/includes/js/jquery.sticky.js" />"></script>
-		<script type="text/javascript" src="<s:url value="/assets/store/includes/js/slides.jquery.js" />"></script>
-		
-		<!-- The Favicon -->
-		<link rel="shortcut icon" href="<s:url value="/assets/store/images/favicon.png" />" />
-	</head>
-	<body class="scheme_light button_blue content_left">
-			<div class="wrapper" id="header">
-			<div class="container">
-				<a href="index-2.html" title="Stored HTML Template" class="left the_logo">
-					<img src="<s:url value="/assets/store/images/storedlogo.png" />" alt="Stored HTML Template" id="logo" />
-				</a>
-				<form method="get" id="searchform" action="#">
-					<div>
-						<input type="text" class="search_input" value="To search, type and hit enter" name="s" id="s" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" />
-						<input type="hidden" id="searchsubmit" value="Search" />
-						<input type="hidden" name="post_type" value="products" />
-					</div>
-				</form>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<div class="wrapper" id="main_menu">
-			<div class="container">
-				<div class="menu-header-container">
-					<ul id="menu-header" class="menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="products.html">Store +</a>
-							<ul class="sub-menu">
-								<li><a href="product-archive.html">Shirts +</a>
-									<ul class="sub-menu">
-										<li><a href="#">By Subject +</a>
-											<ul class="sub-menu">
-												<li><a href="product-archive.html">Animals</a></li>
-												<li><a href="product-archive.html">Humanistic</a></li>
-												<li><a href="product-archive.html">Typography</a></li>
-											</ul>
-										</li>
-										<li><a href="#">By Color +</a>
-											<ul class="sub-menu">
-												<li><a href="product-archive.html">Black</a></li>
-												<li><a href="product-archive.html">Gray</a></li>
-												<li><a href="product-archive.html">Green</a></li>
-												<li><a href="product-archive.html">Purple</a></li>
-												<li><a href="product-archive.html">Yellow</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="page.html">Kitchen Sink</a></li>
-						<li><a href="page-contact.html">Contact</a></li>
-						<li><a href="#">More Page Layouts +</a>
-							<ul class="sub-menu">
-								<li><a href="page-extras.html">Extras</a></li>
-								<li><a href="page-full.html">Full Width</a></li>
-								<li><a href="#">Menu Child +</a>
-									<ul class="sub-menu">
-										<li><a href="#">The Drop Down</a></li>
-										<li><a href="#">Flyouts +</a>
-											<ul class="sub-menu">
-												<li><a href="#">Are Endless +</a>
-													<ul class="sub-menu">
-														<li><a href="#">Make As Many</a></li>
-														<li><a href="#">As You Want</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div id="cart_links">
-					<ul>
-						<li><a href="#" title="Log In">Log In</a></li>
-						<li><a href="<s:url value="product-cart" />" title="cart" id="head_cart">Your Cart (0)</a></li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-				<div class="wrapper" id="content"> <!-- #content ends in footer.php -->
-			<div class="container">
-<div id="single_product_page">
-	<div class="products single-products">
-		<div id="product_images">
-			<a id="main_product_image" href="<s:url value="/assets/store/images/demo/ship.png" />" class="lightbox">
-				<span class="preview"></span>
-				<img width="280" height="300" src="<s:url value="/assets/store/images/demo/ship-280x300.png"/>"  class="attachment-product_main" alt="Don&#8217;t Give Up The Ship" title="ship" />
-			</a>
-			<div id="product_thumbs">
-				<a href="<s:url value="/assets/store/images/demo/ship.png"/>" class="lightbox">
-					<span class="preview"></span>
-					<img width="80" height="80" src="<s:url value="/assets/store/images/demo/ship-80x80.png"/>" class="attachment-product_mini_gallery" alt="ship" title="ship" />
-				</a>
-				<a href="<s:url value="/assets/store/images/demo/anchor.png"/>" class="lightbox">
-					<span class="preview"></span>
-					<img width="80" height="80" src="<s:url value="/assets/store/images/demo/anchor-80x80.png"/>" class="attachment-product_mini_gallery" alt="anchor" title="anchor" />
-				</a>
-				<a href="<s:url value="/assets/store/images/demo/arquebus.png"/>" class="lightbox">
-					<span class="preview"></span>
-					<img width="80" height="80" src="<s:url value="/assets/store/images/demo/arquebus-80x80.png"/>" class="attachment-product_mini_gallery" alt="arquebus" title="arquebus" />
-				</a>
-				<div class="clear"></div>
-			</div>
-			<div class="single-product-meta">
-				<span>Product Categories: <a href="product-archive.html" rel="tag">Shirts</a>, <a href="product-archive.html" rel="tag">Typography</a>
-				</span>
-				<span>Tagged With: <a href="product-archive.html" rel="tag">purple</a>, <a href="product-archive.html" rel="tag">typography</a>
-				</span>
-			</div>
-		</div><!-- end #product_images -->
-		<div id="product_info">
-			<h2 class="post_title">Don&#8217;t Give Up The Ship</h2>
-			<form id="cartButtonForm" class="CartButton single_add-to-cart" method="post" action="http://themes.designcrumbs.com/html/stored/page-cart.php" >
-				<div>
-					<input type="hidden" name="task" id="task_1" value="addToCart" />
-					<input type="hidden" name="ItemId" value="1" />
-					<input type="hidden" name="product_url" value="product-single.html" />
-					<span class="Price"><span class="PriceLabel">Price: </span><span class="CurrencySymbol">$</span><span class="PreDecimal">23</span><span class="DecimalSep">.</span><span class="PostDecimal">00</span>
-					</span>
-					<select name="options_1" id="options_1">
-						<option value="Mens">Mens</option>
-						<option value="Womens">Womens</option>
-					</select>
-					<select name="options_2" id="options_2">
-						<option value="Small">Small</option>
-						<option value="Medium">Medium</option>
-						<option value="Large">Large</option>
-						<option value="X-Large">X-Large</option>
-						<option value="XX-Large">XX-Large</option>
-					</select>
-					<input type="submit" value="Add to Cart" class="ButtonPrimary" name="addToCart" id="addToCart" />
-					<div class="clear"></div>
-				</div>
-			</form>
-			<p>“Don’t give up the ship” are the direct quotes and rally cry of the dying commander of the USS Chesapeake James Lawrence in 1813 when engaged in a mortal battle against a blockading navy frigate. Below the anchor are his initials J.L.
-			</p>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien.
-			</p>
-			<blockquote><p>Don&#8217;t give up the ship</p></blockquote>
-			<p>Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.
-			</p>
-		</div><!-- end #product_info -->
-		<div class="clear"></div>
-	</div><!-- end .post_class -->
-	<div id="product_comments">
-		<h3 id="comments">2 Comments on "Don&#8217;t Give Up The Ship"</h3>
-		<div id="comments_wrap">
-			<ul class="commentlist"><!-- display omments -->
-				<li class="comment bypostauthor">
-					<div class="the_comment">
-						<img alt="avatar" src="http://0.gravatar.com/avatar/02cdeec360274d7d9f1aa85761f95dc8?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" class="avatar" height="50" width="50" />
-						<div class="the_comment_author">Jake</div>
-						<small class="commentmetadata">January 09, 2012 at 5:01 pm</small>
-						<div class="clear"></div>
-						<div class="the_comment_text">
-							<p>I love this shirt.</p>
-						</div>
-						<div class="reply">
-							<a class="comment-reply-link" href="#">Reply</a>
-						</div>
-					</div>
-				</li>
-				<li class="comment">
-					<div class="the_comment">
-						<img alt="avatar" src="http://0.gravatar.com/avatar/e73e8b740e9f893f0b42cbb90b6d9ef6?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" class="avatar" height="50" width="50" />
-						<div class="the_comment_author">Kyle</div>
-						<small class="commentmetadata">January 09, 2012 at 6:03 pm</small>
-						<div class="clear"></div>
-						<div class="the_comment_text">
-							<p>This is a non-author comment.</p>
-						</div>
-						<div class="reply">
-							<a class="comment-reply-link" href="#">Reply</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div id="respond">
-			<form action="#" method="post" id="commentform">
-				<h3 id="leavecomment">Leave Your Comment</h3>
-				<p>
-					<label for="author">Name (required)</label>
-					<input type="text" name="author" id="author" value="" size="22" tabindex="1" class="text required" />
-				</p>
-				<p>
-					<label for="email">Email (required - never shared)</label>
-					<input type="text" name="email" id="email" value="" size="22" tabindex="2" class="text required" />
-				</p>
-				<p>
-					<label for="url">Website</label>
-					<input type="text" name="url" id="url" value="" size="22" tabindex="3" />
-				</p>
-				<p>
-					<label for="url">Comment</label>
-					<textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea>
-				</p>
-				<div>
-					<input name="submit" type="submit" id="submit" tabindex="5" value="Send" />
-					<input type="hidden" name="comment_post_ID" value="78" />
-					<div id="cancel-comment-reply">
-						<small><a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display:none;">Cancel reply</a>
-						</small>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</form>
-		</div><!-- end #respond -->
-	</div>
-	<div class="clear"></div>
-</div><!-- end #single_product_page -->
+<title>Stored HTML Template</title>
+<meta name="Keywords" content=" " />
+<meta name="Description" content=" " />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<!-- CSS -->
+<link rel="stylesheet"
+	href="<s:url value="/assets/store/css/style.css" />" type="text/css"
+	media="screen" />
+<link rel="stylesheet" type="text/css"
+	href="<s:url value="/assets/store/fonts/style-bitter.css" />"
+	media="screen" />
+<link rel="stylesheet" type="text/css"
+	href="<s:url value="/assets/store/includes/fancybox/jquery.fancybox-1.3.4.css" />"
+	media="screen" />
+
+
+<!-- jQuery We Need -->
+<script type="text/javascript"
+	src="../../../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript"
+	src="<s:url value="/assets/store/includes/js/jquery.easing.1.3.js" />"></script>
+<script type="text/javascript"
+	src="<s:url value="/assets/store/includes/fancybox/jquery.mousewheel-3.0.4.pack.js" />"></script>
+<script type="text/javascript"
+	src="<s:url value="/assets/store/includes/fancybox/jquery.fancybox-1.3.4.pack.js" />"></script>
+<script type="text/javascript"
+	src="<s:url value="/assets/store/includes/js/jquery.sticky.js" />"></script>
+<script type="text/javascript"
+	src="<s:url value="/assets/store/includes/js/slides.jquery.js" />"></script>
+
+<!-- The Favicon -->
+<link rel="shortcut icon"
+	href="<s:url value="/assets/store/images/favicon.png" />" />
+</head>
+<body class="scheme_light button_blue content_left">
+	<div class="wrapper" id="header">
+		<div class="container">
+			<a href="index-2.html" title="Stored HTML Template"
+				class="left the_logo"> <img
+				src="<s:url value="/assets/store/images/storedlogo.png" />"
+				alt="Stored HTML Template" id="logo" />
+			</a>
+			<form method="get" id="searchform" action="#">
+				<div>
+					<input type="text" class="search_input"
+						value="To search, type and hit enter" name="s" id="s"
+						onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}"
+						onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" />
+					<input type="hidden" id="searchsubmit" value="Search" /> <input
+						type="hidden" name="post_type" value="products" />
+				</div>
+			</form>
 			<div class="clear"></div>
-			</div><!-- end div.container, begins in header.php -->
-		</div><!-- end div.wrapper, begins in header.php -->
-		<div id="footer" class="wrapper">
-			<div class="container">
-				<div class="left" id="footer_menu">
-					<div class="menu">
-						<ul>
-							<li><a href="#">Footer Link</a></li>
-							<li><a href="#">Footer Link</a></li>
-							<li><a href="#">Footer Link</a></li>
-							<li><a href="#">Footer Link</a></li>
-							<li><a href="#">Footer Link</a></li>
-							<li><a href="#">Footer Link</a></li>
+		</div>
+	</div>
+	<div class="wrapper" id="main_menu">
+		<div class="container">
+			<div class="menu-header-container">
+				<ul id="menu-header" class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="products.html">Store +</a>
+						<ul class="sub-menu">
+							<li><a href="product-archive.html">Shirts +</a>
+								<ul class="sub-menu">
+									<li><a href="#">By Subject +</a>
+										<ul class="sub-menu">
+											<li><a href="product-archive.html">Animals</a></li>
+											<li><a href="product-archive.html">Humanistic</a></li>
+											<li><a href="product-archive.html">Typography</a></li>
+										</ul></li>
+									<li><a href="#">By Color +</a>
+										<ul class="sub-menu">
+											<li><a href="product-archive.html">Black</a></li>
+											<li><a href="product-archive.html">Gray</a></li>
+											<li><a href="product-archive.html">Green</a></li>
+											<li><a href="product-archive.html">Purple</a></li>
+											<li><a href="product-archive.html">Yellow</a></li>
+										</ul></li>
+								</ul></li>
+						</ul></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="page.html">Kitchen Sink</a></li>
+					<li><a href="page-contact.html">Contact</a></li>
+					<li><a href="#">More Page Layouts +</a>
+						<ul class="sub-menu">
+							<li><a href="page-extras.html">Extras</a></li>
+							<li><a href="page-full.html">Full Width</a></li>
+							<li><a href="#">Menu Child +</a>
+								<ul class="sub-menu">
+									<li><a href="#">The Drop Down</a></li>
+									<li><a href="#">Flyouts +</a>
+										<ul class="sub-menu">
+											<li><a href="#">Are Endless +</a>
+												<ul class="sub-menu">
+													<li><a href="#">Make As Many</a></li>
+													<li><a href="#">As You Want</a></li>
+												</ul></li>
+										</ul></li>
+								</ul></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div id="cart_links">
+				<ul>
+					<li><a href="#" title="Log In">Log In</a></li>
+					<li><a href="<s:url value="product-cart" />" title="cart"
+						id="head_cart">Your Cart (0)</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="wrapper" id="content">
+		<!-- #content ends in footer.php -->
+		<div class="container">
+			<div id="single_product_page">
+				<div class="products single-products">
+					<div id="product_images">
+						<a id="main_product_image"
+							href="<s:url value="/assets/store/images/demo/ship.png" />"
+							class="lightbox"> <span class="preview"></span> <img
+							width="280" height="300"
+							src="<s:url value="/assets/store/images/demo/ship-280x300.png"/>"
+							class="attachment-product_main"
+							alt="Don&#8217;t Give Up The Ship" title="ship" />
+						</a>
+						<div id="product_thumbs">
+							<a href="<s:url value="/assets/store/images/demo/ship.png"/>"
+								class="lightbox"> <span class="preview"></span> <img
+								width="80" height="80"
+								src="<s:url value="/assets/store/images/demo/ship-80x80.png"/>"
+								class="attachment-product_mini_gallery" alt="ship" title="ship" />
+							</a> <a href="<s:url value="/assets/store/images/demo/anchor.png"/>"
+								class="lightbox"> <span class="preview"></span> <img
+								width="80" height="80"
+								src="<s:url value="/assets/store/images/demo/anchor-80x80.png"/>"
+								class="attachment-product_mini_gallery" alt="anchor"
+								title="anchor" />
+							</a> <a
+								href="<s:url value="/assets/store/images/demo/arquebus.png"/>"
+								class="lightbox"> <span class="preview"></span> <img
+								width="80" height="80"
+								src="<s:url value="/assets/store/images/demo/arquebus-80x80.png"/>"
+								class="attachment-product_mini_gallery" alt="arquebus"
+								title="arquebus" />
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div class="single-product-meta">
+							<span>Product Categories: <a href="product-archive.html"
+								rel="tag">Shirts</a>, <a href="product-archive.html" rel="tag">Typography</a>
+							</span> <span>Tagged With: <a href="product-archive.html"
+								rel="tag">purple</a>, <a href="product-archive.html" rel="tag">typography</a>
+							</span>
+						</div>
+					</div>
+					<!-- end #product_images -->
+					<div id="product_info">
+						<h2 class="post_title">
+							Don't Give Up The Ship
+							
+						</h2>
+
+						<!-- create url to go to Add Cart action -->
+						<s:url value="addCart" var="addCartUrl" />
+						<form id="cartButtonForm" class="CartButton single_add-to-cart"
+							method="post" action="${addCartUrl}">
+							<div>
+								<input type="hidden" name="task" id="task_1" value="addToCart" />
+								<input type="hidden" name="ItemId" value="1" /> <input
+									type="hidden" name="product_url" value="product-single.html" />
+								<span class="Price"><span class="PriceLabel">Price:
+								</span><span class="CurrencySymbol">$</span>
+								
+								<span class="PreDecimal"> 23 </span>
+								
+								<s:hidden name="price" value="23"/>
+								<s:hidden name="name" value="Don't Give Up The Ship"/>
+								<span
+									class="DecimalSep">.</span><span class="PostDecimal">00</span>
+								</span>
+								<%-- <select name="gender" id="options_1">
+						
+					</select> --%>
+								<select name="gender" id="options_1">
+									<option value="Mens">Mens</option>
+									<option value="Womens">Womens</option>
+								</select>
+
+								<select name="size" id="options_2">
+									<option value="Small">Small</option>
+									<option value="Medium">Medium</option>
+									<option value="Large">Large</option>
+									<option value="X-Large">X-Large</option>
+									<option value="XX-Large">XX-Large</option>
+								</select>
+
+								<%-- <select name="size" id="options_2">
+									<option value="Small">Small</option>
+									<option value="Medium">Medium</option>
+									<option value="Large">Large</option>
+									<option value="X-Large">X-Large</option>
+									<option value="XX-Large">XX-Large</option>
+								</select> --%>
+								
+								 <input type="submit" value="Add to Cart" class="ButtonPrimary"
+									name="addToCart" id="addToCart" />
+								<div class="clear"></div>
+							</div>
+						</form>
+						<p>“Don’t give up the ship” are the direct quotes and
+							rally cry of the dying commander of the USS Chesapeake James
+							Lawrence in 1813 when engaged in a mortal battle against a
+							blockading navy frigate. Below the anchor are his initials J.L.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+							Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus
+							neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.
+							Suspendisse id velit vitae ligula volutpat condimentum. Aliquam
+							erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
+							Vivamus pharetra posuere sapien.</p>
+						<blockquote>
+							<p>Don&#8217;t give up the ship</p>
+						</blockquote>
+						<p>Nam consectetuer. Sed aliquam, nunc eget euismod
+							ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum
+							enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas
+							vitae nulla consequat libero cursus venenatis.</p>
+					</div>
+					<!-- end #product_info -->
+					<div class="clear"></div>
+				</div>
+				<!-- end .post_class -->
+				<div id="product_comments">
+					<h3 id="comments">2 Comments on "Don&#8217;t Give Up The Ship"</h3>
+					<div id="comments_wrap">
+						<ul class="commentlist">
+							<!-- display omments -->
+							<li class="comment bypostauthor">
+								<div class="the_comment">
+									<img alt="avatar"
+										src="http://0.gravatar.com/avatar/02cdeec360274d7d9f1aa85761f95dc8?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G"
+										class="avatar" height="50" width="50" />
+									<div class="the_comment_author">Jake</div>
+									<small class="commentmetadata">January 09, 2012 at 5:01
+										pm</small>
+									<div class="clear"></div>
+									<div class="the_comment_text">
+										<p>I love this shirt.</p>
+									</div>
+									<div class="reply">
+										<a class="comment-reply-link" href="#">Reply</a>
+									</div>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="the_comment">
+									<img alt="avatar"
+										src="http://0.gravatar.com/avatar/e73e8b740e9f893f0b42cbb90b6d9ef6?s=50&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G"
+										class="avatar" height="50" width="50" />
+									<div class="the_comment_author">Kyle</div>
+									<small class="commentmetadata">January 09, 2012 at 6:03
+										pm</small>
+									<div class="clear"></div>
+									<div class="the_comment_text">
+										<p>This is a non-author comment.</p>
+									</div>
+									<div class="reply">
+										<a class="comment-reply-link" href="#">Reply</a>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
-					<div class="clear"></div>
-					&copy; 2017 Stored &nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a href="http://themeforest.net/user/designcrumbs/portfolio?ref=designcrumbs" title="Design Crumbs WordPress Themes">Stored Theme</a> by <a href="http://themeforest.net/user/designcrumbs/portfolio?ref=designcrumbs" title="Design Crumbs">Design Crumbs</a>
-				</div>
-				<div class="right">
-					<div id="socnets">
-						<a href="http://www.twitter.com/jakecaputo" title="Twitter">
-							<img src="<s:url value="assets/store/images/socnets/twitter.png"/>" alt="Twitter" />
-						</a>
-						<a href="#" title="Facebook">
-							<img src="<s:url value="assets/store/images/socnets/facebook.png"/>" alt="Facebook" />
-						</a>
-						<a href="#" title="Google+">
-							<img src="<s:url value="assets/store/images/socnets/google.png"/>" alt="Google+" />
-						</a>
-						<a href="#" title="Flickr">
-							<img src="<s:url value="assets/store/images/socnets/flickr.png"/>" alt="Flickr" />
-						</a>
-						<a href="http://www.forrst.me/jakecaputo" title="Forrst">
-							<img src="<s:url value="assets/store/images/socnets/forrst.png"/>" alt="Forrst" />
-						</a>
-						<a href="http://www.dribbble.com/jakecaputo" title="Dribbble">
-							<img src="<s:url value="assets/store/images/socnets/dribbble.png"/>" alt="Dribbble" />
-						</a>
-						<a href="#" title="Tumblr">
-							<img src="<s:url value="assets/store/images/socnets/tumblr.png"/>" alt="Tumblr" />
-						</a>
-						<a href="#" title="Vimeo">
-							<img src="<s:url value="assets/store/images/socnets/vimeo.png"/>" alt="Vimeo" />
-						</a>
-						<div class="clear"></div>
+					<div id="respond">
+						<form action="#" method="post" id="commentform">
+							<h3 id="leavecomment">Leave Your Comment</h3>
+							<p>
+								<label for="author">Name (required)</label> <input type="text"
+									name="author" id="author" value="" size="22" tabindex="1"
+									class="text required" />
+							</p>
+							<p>
+								<label for="email">Email (required - never shared)</label> <input
+									type="text" name="email" id="email" value="" size="22"
+									tabindex="2" class="text required" />
+							</p>
+							<p>
+								<label for="url">Website</label> <input type="text" name="url"
+									id="url" value="" size="22" tabindex="3" />
+							</p>
+							<p>
+								<label for="url">Comment</label>
+								<textarea name="comment" id="comment" cols="50" rows="10"
+									tabindex="4"></textarea>
+							</p>
+							<div>
+								<input name="submit" type="submit" id="submit" tabindex="5"
+									value="Send" /> <input type="hidden" name="comment_post_ID"
+									value="78" />
+								<div id="cancel-comment-reply">
+									<small><a rel="nofollow" id="cancel-comment-reply-link"
+										href="#respond" style="display: none;">Cancel reply</a> </small>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</form>
 					</div>
+					<!-- end #respond -->
 				</div>
 				<div class="clear"></div>
 			</div>
+			<!-- end #single_product_page -->
+
+			<div class="clear"></div>
 		</div>
-		<script type="text/javascript">
-/* <![CDATA[  */ 
-var J = jQuery.noConflict();
-J(document).ready(function(){
-				
-				// Children Flyout on Menu
-				function mainmenu(){
-				J("#main_menu ul li ul").css({display: "none"}); // Opera Fix
-					J("#main_menu ul li").hover(function(){
-						J(this).find('ul:first').css({visibility: "visible",display: "none"}).show(300);
-						},function(){
-						J(this).find('ul:first').css({visibility: "hidden"});
-					});
-				}
-								
-				mainmenu();
-				
-				// Fancybox
-				J(".lightbox").fancybox({
-					'transitionIn'		: 'fade',
-					'transitionOut'		: 'fade',
-					'showNavArrows' 	: 'true'
-				});
-				
-								
-				// Switch classes
-				J(".single_grid_product").hover(function(){
-        			J(this).find('h3 a').switchClass('grid_title', 'grid_title-alt', 200);
-    			}, function(){
-        			J(this).find('h3 a').switchClass('grid_title-alt', 'grid_title', 400);
-				});
-				
-				// Animates the products on Hover
-				J('.single_grid_product').hover(function(){
-					J(this).find('.single_product_image_link').animate({top:'5px'},{queue:false,duration:200});
-				}, function(){
-					J(this).find('.single_product_image_link').animate({top:'10px'},{queue:false,duration:400});
-				});
-				
-				// preview hovers
-				J(".preview").fadeTo("fast", 0);
-				J('#product_thumbs a, #main_product_image').hover(function(){
-					J(this).find('.preview').stop().fadeTo(150, .9);
-				},function(){
-					J(this).find('.preview').stop().fadeTo(150, 0);
-				});
-				
-				// image hovers
-				J('img.alignright, img.alignleft, img.aligncenter, img.alignnone, .attachment-blog_image_lg, .attachment-blog_image_sm').hover(function(){
-					J(this).stop().fadeTo(200, .8);
-				},function(){
-					J(this).stop().fadeTo(200, 1);
-				});
-				
-				// IE png fix
-				var i;
-				for (i in document.images) {
-    				if (document.images[i].src) {
-        				var imgSrc = document.images[i].src;
-        				if (imgSrc.substr(imgSrc.length-4) === '.png' || imgSrc.substr(imgSrc.length-4) === '.PNG') {
-            				document.images[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='" + imgSrc + "')";
-        				}
-    				}
-				};
+		<!-- end div.container, begins in header.php -->
+	</div>
+	<!-- end div.wrapper, begins in header.php -->
+	<div id="footer" class="wrapper">
+		<div class="container">
+			<div class="left" id="footer_menu">
+				<div class="menu">
+					<ul>
+						<li><a href="#">Footer Link</a></li>
+						<li><a href="#">Footer Link</a></li>
+						<li><a href="#">Footer Link</a></li>
+						<li><a href="#">Footer Link</a></li>
+						<li><a href="#">Footer Link</a></li>
+						<li><a href="#">Footer Link</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				&copy; 2017 Stored &nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;<a
+					href="http://themeforest.net/user/designcrumbs/portfolio?ref=designcrumbs"
+					title="Design Crumbs WordPress Themes">Stored Theme</a> by <a
+					href="http://themeforest.net/user/designcrumbs/portfolio?ref=designcrumbs"
+					title="Design Crumbs">Design Crumbs</a>
+			</div>
+			<div class="right">
+				<div id="socnets">
+					<a href="http://www.twitter.com/jakecaputo" title="Twitter"> <img
+						src="<s:url value="assets/store/images/socnets/twitter.png"/>"
+						alt="Twitter" />
+					</a> <a href="#" title="Facebook"> <img
+						src="<s:url value="assets/store/images/socnets/facebook.png"/>"
+						alt="Facebook" />
+					</a> <a href="#" title="Google+"> <img
+						src="<s:url value="assets/store/images/socnets/google.png"/>"
+						alt="Google+" />
+					</a> <a href="#" title="Flickr"> <img
+						src="<s:url value="assets/store/images/socnets/flickr.png"/>"
+						alt="Flickr" />
+					</a> <a href="http://www.forrst.me/jakecaputo" title="Forrst"> <img
+						src="<s:url value="assets/store/images/socnets/forrst.png"/>"
+						alt="Forrst" />
+					</a> <a href="http://www.dribbble.com/jakecaputo" title="Dribbble">
+						<img
+						src="<s:url value="assets/store/images/socnets/dribbble.png"/>"
+						alt="Dribbble" />
+					</a> <a href="#" title="Tumblr"> <img
+						src="<s:url value="assets/store/images/socnets/tumblr.png"/>"
+						alt="Tumblr" />
+					</a> <a href="#" title="Vimeo"> <img
+						src="<s:url value="assets/store/images/socnets/vimeo.png"/>"
+						alt="Vimeo" />
+					</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/* <![CDATA[  */
+		var J = jQuery.noConflict();
+		J(document)
+				.ready(
+						function() {
 
-				
-				if(!J.browser.msie){
-					// Animates the soc nets on hover
-					J("#socnets").delegate("img", "mouseover mouseout", function(e) {
-						if (e.type == 'mouseover') {
-							J("#socnets a img").not(this).dequeue().animate({opacity: "0.3"}, 300);
-    					} else {
-							J("#socnets a img").not(this).dequeue().animate({opacity: "1"}, 300);
-   						}
-					});
-					
-					// Animates new products widget on hover
-					J("#recent_products").delegate("a", "mouseover mouseout", function(e) {
-						if (e.type == 'mouseover') {
-							J("#recent_products a").not(this).dequeue().animate({opacity: "0.5"}, 300);
-    					} else {
-							J("#recent_products a").not(this).dequeue().animate({opacity: "1"}, 300);
-   						}
-					});
-				};
-				
-				// sticky menu
-				J("#main_menu").sticky({topSpacing:0});
+							// Children Flyout on Menu
+							function mainmenu() {
+								J("#main_menu ul li ul").css({
+									display : "none"
+								}); // Opera Fix
+								J("#main_menu ul li").hover(function() {
+									J(this).find('ul:first').css({
+										visibility : "visible",
+										display : "none"
+									}).show(300);
+								}, function() {
+									J(this).find('ul:first').css({
+										visibility : "hidden"
+									});
+								});
+							}
 
-			});
-			
-			/* ]]> */
-		</script>		<script type="text/javascript">
+							mainmenu();
 
+							// Fancybox
+							J(".lightbox").fancybox({
+								'transitionIn' : 'fade',
+								'transitionOut' : 'fade',
+								'showNavArrows' : 'true'
+							});
+
+							// Switch classes
+							J(".single_grid_product").hover(
+									function() {
+										J(this).find('h3 a').switchClass(
+												'grid_title', 'grid_title-alt',
+												200);
+									},
+									function() {
+										J(this).find('h3 a').switchClass(
+												'grid_title-alt', 'grid_title',
+												400);
+									});
+
+							// Animates the products on Hover
+							J('.single_grid_product').hover(
+									function() {
+										J(this).find(
+												'.single_product_image_link')
+												.animate({
+													top : '5px'
+												}, {
+													queue : false,
+													duration : 200
+												});
+									},
+									function() {
+										J(this).find(
+												'.single_product_image_link')
+												.animate({
+													top : '10px'
+												}, {
+													queue : false,
+													duration : 400
+												});
+									});
+
+							// preview hovers
+							J(".preview").fadeTo("fast", 0);
+							J('#product_thumbs a, #main_product_image').hover(
+									function() {
+										J(this).find('.preview').stop().fadeTo(
+												150, .9);
+									},
+									function() {
+										J(this).find('.preview').stop().fadeTo(
+												150, 0);
+									});
+
+							// image hovers
+							J(
+									'img.alignright, img.alignleft, img.aligncenter, img.alignnone, .attachment-blog_image_lg, .attachment-blog_image_sm')
+									.hover(function() {
+										J(this).stop().fadeTo(200, .8);
+									}, function() {
+										J(this).stop().fadeTo(200, 1);
+									});
+
+							// IE png fix
+							var i;
+							for (i in document.images) {
+								if (document.images[i].src) {
+									var imgSrc = document.images[i].src;
+									if (imgSrc.substr(imgSrc.length - 4) === '.png'
+											|| imgSrc.substr(imgSrc.length - 4) === '.PNG') {
+										document.images[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='"
+												+ imgSrc + "')";
+									}
+								}
+							}
+							;
+
+							if (!J.browser.msie) {
+								// Animates the soc nets on hover
+								J("#socnets").delegate(
+										"img",
+										"mouseover mouseout",
+										function(e) {
+											if (e.type == 'mouseover') {
+												J("#socnets a img").not(this)
+														.dequeue().animate({
+															opacity : "0.3"
+														}, 300);
+											} else {
+												J("#socnets a img").not(this)
+														.dequeue().animate({
+															opacity : "1"
+														}, 300);
+											}
+										});
+
+								// Animates new products widget on hover
+								J("#recent_products").delegate(
+										"a",
+										"mouseover mouseout",
+										function(e) {
+											if (e.type == 'mouseover') {
+												J("#recent_products a").not(
+														this).dequeue()
+														.animate({
+															opacity : "0.5"
+														}, 300);
+											} else {
+												J("#recent_products a").not(
+														this).dequeue()
+														.animate({
+															opacity : "1"
+														}, 300);
+											}
+										});
+							}
+							;
+
+							// sticky menu
+							J("#main_menu").sticky({
+								topSpacing : 0
+							});
+
+						});
+
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
 		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-19161846-8']);
-		_gaq.push(['_trackPageview']);
+		_gaq.push([ '_setAccount', 'UA-19161846-8' ]);
+		_gaq.push([ '_trackPageview' ]);
 
 		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
 		})();
-
-		</script>
-	</body>
+	</script>
+</body>
 
 <!-- Mirrored from themes.designcrumbs.com/html/stored/product-single.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2017 15:02:06 GMT -->
 </html>

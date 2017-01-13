@@ -67,6 +67,11 @@
 			<result name="success" type="tiles">product.tiles</result>
 			<!-- <result>/WEB-INF/product/product.jsp</result> -->
 		</action>
+		
+		<action name="addCart" class="simple.controller.AddCartAction">
+			<result>/WEB-INF/stored/page-cart.jsp</result>
+		</action>
+		
 		<action name="add">
 			<result>/WEB-INF/product/addNewProduct.jsp</result>
 		</action>
